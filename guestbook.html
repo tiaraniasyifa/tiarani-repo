@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Website</title>
+
+<style>
+
+  th a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+th a:hover {
+    color: yellow;
+}
+body {
+    margin: 0;
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Welcome Box */
+.welcome-box {
+    background: linear-gradient(135deg, #ffe6f0, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 850px;
+    margin: 20px auto;
+    animation: fadeIn 1.3s ease;
+    text-align: center;
+}
+
+.welcome-box h2 {
+    color: #c2185b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.welcome-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.highlight {
+    color: #d63384;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+</head>
+
+<body>
+
+<table border="0" width="80%" align="center">
+
+<tr>
+<td align="right">
+<a href="mailto:tiaraniasyifa60@gmail.com" target="_blank">| e-mail</a>
+<a href="https://wa.me/6283181002126" target="_blank">| whatsapp</a>
+<a href="https://www.facebook.com/tiaraniasyifa" target="_blank">| Facebook</a>
+<a href="https://www.instagram.com/tiarawr._" target="_blank">| Instagram</a>
+<a href="https://www.youtube.com/@tiaraniasyifa3310" target="_blank">| YouTube</a>
+<a href="https://www.tiktok.com/@tiarv.yf" target="_blank">| TikTok</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="image/header.png" width="100%">
+
+<table border="0" width="100%">
+<tr bgcolor="#999999">
+<th><a href="index.html">HOME</a></th>
+<th><a href="profile.html">PROFIL</a></th>
+<th><a href="gallery.html">GALLERY</a></th>
+<th><a href="tutorial.html">TUTORIAL</a></th>
+<th><a href="article.html">ARTICLE</a></th>
+<th><a href="aboutme.html">ABOUT ME</a></th>
+<th><a href="guestbook.html">GUESTBOOK</a></th>
+<th align="right">
+<form action="#">
+<input type="text" name="pencarian">
+<input type="submit" value="~ cari ~">
+</form>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table border="0" width="100%" height="350">
+
+<tr>
+
+<td width="20%" valign="top">
+
+<fieldset>
+<legend>MENU UTAMA</legend>
+<ul>
+<li><a href="index.html">Halaman Depan</a></li>
+<li><a href="profile.html">Profil Pribadi</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="article.html">Artikel</a></li>
+<li><a href="tutorial.html">Materi Belajar</a></li>
+<li><a href="aboutme.html">Tentang Saya</a></li>
+<li><a href="guestbook.html">Isi Buku Tamu</a></li>
+</ul>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>FOTO KESAYANGAN</legend>
+<marquee>
+<img src="image/IMG_20250917_104848.jpg" width="200">
+<img src="image/IMG_20250917_104703.jpg" width="200">
+<img src="image/IMG_20250917_104315.jpg" width="200">
+<img src="image/IMG_20250917_104818.jpg" width="200">
+<img src="image/IMG_20250917_104519.jpg" width="200">
+</marquee>
+</fieldset>
+
+</td>
+
+<td width="80%" valign="top">
+
+<!-- Konten Awal -->
+
+<h2 class="guest-title">Buku Tamu</h2>
+
+<div class="guestbook-container">
+  <h3>Silakan Isi Buku Tamu 💌</h3>
+  <form>
+    
+    <div class="form-group">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Alamat Email</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email aktif" required>
+    </div>
+
+    <div class="form-group">
+      <label for="jk">Jenis Kelamin</label>
+      <select id="jk" name="jk" required>
+        <option value="">-- Pilih Jenis Kelamin --</option>
+        <option value="Perempuan">Perempuan</option>
+        <option value="Laki-laki">Laki-laki</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="tanggal">Tanggal Lahir</label>
+      <input type="date" id="tanggal" name="tanggal" required>
+    </div>
+
+    <div class="form-group">
+      <label for="alamat">Alamat</label>
+      <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap anda"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="pesan">Pesan/Kesan</label>
+      <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan atau kesan anda di sini..."></textarea>
+    </div>
+
+    <button type="submit">Kirim Buku Tamu</button>
+
+  </form>
+</div>
+
+<!-- Konten Akhir -->
+
+<style>
+.guest-title {
+  text-align: center;
+  color: #d63384;
+  font-family: Verdana, sans-serif;
+  animation: fadeInSimple 1s ease;
+}
+
+.guestbook-container {
+  background: #ffe4ec;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  animation: fadeInSimple 1s ease;
+  font-family: Verdana, sans-serif;
+}
+
+.guestbook-container h3 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #f48fb1;
+  box-shadow: 0 0 8px rgba(244,143,177,0.5);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #f48fb1;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #ec407a;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInSimple {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+
+</td>
+
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#999999">
+<br>
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6072.043707163134!2d101.35773009116514!3d0.46515828151743194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1758101666824!5m2!1sid!2sid"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+<br><br>
+<small>
+ Tiarani Asyifa - Sistem Informasi - UIN Suska Riau<br />
+            Copyright &copy; 2026
+</small>
+
+<br><br>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Website</title>
+
+<style>
+
+  th a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+th a:hover {
+    color: yellow;
+}
+body {
+    margin: 0;
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Welcome Box */
+.welcome-box {
+    background: linear-gradient(135deg, #ffe6f0, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 850px;
+    margin: 20px auto;
+    animation: fadeIn 1.3s ease;
+    text-align: center;
+}
+
+.welcome-box h2 {
+    color: #c2185b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.welcome-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.highlight {
+    color: #d63384;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+</head>
+
+<body>
+
+<table border="0" width="80%" align="center">
+
+<tr>
+<td align="right">
+<a href="mailto:tiaraniasyifa60@gmail.com" target="_blank">| e-mail</a>
+<a href="https://wa.me/6283181002126" target="_blank">| whatsapp</a>
+<a href="https://www.facebook.com/tiaraniasyifa" target="_blank">| Facebook</a>
+<a href="https://www.instagram.com/tiarawr._" target="_blank">| Instagram</a>
+<a href="https://www.youtube.com/@tiaraniasyifa3310" target="_blank">| YouTube</a>
+<a href="https://www.tiktok.com/@tiarv.yf" target="_blank">| TikTok</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="image/header.png" width="100%">
+
+<table border="0" width="100%">
+<tr bgcolor="#999999">
+<th><a href="index.html">HOME</a></th>
+<th><a href="profile.html">PROFIL</a></th>
+<th><a href="gallery.html">GALLERY</a></th>
+<th><a href="tutorial.html">TUTORIAL</a></th>
+<th><a href="article.html">ARTICLE</a></th>
+<th><a href="aboutme.html">ABOUT ME</a></th>
+<th><a href="guestbook.html">GUESTBOOK</a></th>
+<th align="right">
+<form action="#">
+<input type="text" name="pencarian">
+<input type="submit" value="~ cari ~">
+</form>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table border="0" width="100%" height="350">
+
+<tr>
+
+<td width="20%" valign="top">
+
+<fieldset>
+<legend>MENU UTAMA</legend>
+<ul>
+<li><a href="index.html">Halaman Depan</a></li>
+<li><a href="profile.html">Profil Pribadi</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="article.html">Artikel</a></li>
+<li><a href="tutorial.html">Materi Belajar</a></li>
+<li><a href="aboutme.html">Tentang Saya</a></li>
+<li><a href="guestbook.html">Isi Buku Tamu</a></li>
+</ul>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>FOTO KESAYANGAN</legend>
+<marquee>
+<img src="image/IMG_20250917_104848.jpg" width="200">
+<img src="image/IMG_20250917_104703.jpg" width="200">
+<img src="image/IMG_20250917_104315.jpg" width="200">
+<img src="image/IMG_20250917_104818.jpg" width="200">
+<img src="image/IMG_20250917_104519.jpg" width="200">
+</marquee>
+</fieldset>
+
+</td>
+
+<td width="80%" valign="top">
+
+<!-- ===== ABOUT ME SECTION ===== -->
+
+<style>
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  background: #ffe4ec;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: aboutFade 1.2s ease;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+  animation: aboutSlide 1.2s ease;
+}
+
+.about-text h3 {
+  margin-top: 0;
+  color: #d63384;
+}
+
+.about-text p {
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.about-img {
+  flex: 1;
+  text-align: center;
+  min-width: 200px;
+}
+
+.about-img img {
+  width: 250px;
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-img img:hover {
+  transform: scale(1.1);
+}
+
+/* Hobi Section */
+.hobi-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobi {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 120px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.hobi:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.hobi img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+/* Animasi khusus about */
+@keyframes aboutFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes aboutSlide {
+  from {transform: translateX(-30px); opacity: 0;}
+  to {transform: translateX(0); opacity: 1;}
+}
+</style>
+
+<h2 style="text-align:center; color:#d63384;">About Me</h2>
+
+<div class="about-container">
+  <div class="about-text">
+    <h3>Halo, saya Tiarani Asyifa 🌸</h3>
+    <p>
+      Saya lahir di <b>Duri</b>, seorang mahasiswa yang suka mempelajari hal-hal baru,
+      terutama tentang <i>teknologi, desain, dan seni</i>.
+      Motto hidup saya adalah <b>"Terus berproses, meskipun perlahan"</b>.
+    </p>
+    <p>
+      Hobi saya antara lain mendengarkan musik, membaca novel,
+      menulis catatan kreatif, dan mencoba resep-resep baru.
+      Saya bercita-cita menjadi <b>seorang profesional IT</b>
+      yang dapat memberikan manfaat bagi banyak orang.
+    </p>
+  </div>
+
+  <div class="about-img">
+    <img src="image/IMG_20250917_104736.jpg" alt="Foto Tiara">
+  </div>
+</div>
+
+<div class="hobi-container">
+  <div class="hobi">
+    <img src="https://img.icons8.com/color/96/000000/headphones.png" alt="musik">
+    <p>Musik</p>
+  </div>
+
+  <div class="hobi">
+    <img src="https://img.icons8.com/color/96/000000/book.png" alt="membaca">
+    <p>Membaca</p>
+  </div>
+
+  <div class="hobi">
+    <img src="image/pngtree-cooking-logo-png-image_8997434.png" alt="memasak">
+    <p>Memasak</p>
+  </div>
+
+  <div class="hobi">
+    <img src="https://img.icons8.com/color/96/000000/computer.png" alt="teknologi">
+    <p>Teknologi</p>
+  </div>
+</div>
+
+<!-- ===== END ABOUT ME ===== -->
+
+</td>
+
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#999999">
+<br>
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6072.043707163134!2d101.35773009116514!3d0.46515828151743194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1758101666824!5m2!1sid!2sid"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+<br><br>
+<small>
+ Tiarani Asyifa - Sistem Informasi - UIN Suska Riau<br />
+            Copyright &copy; 2026
+</small>
+
+<br><br>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>

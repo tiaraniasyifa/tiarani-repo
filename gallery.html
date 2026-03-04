@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My First Website</title>
+
+<style>
+
+  th a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+th a:hover {
+    color: yellow;
+}
+body {
+    margin: 0;
+    background-image: url('image/background.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Welcome Box */
+.welcome-box {
+    background: linear-gradient(135deg, #ffe6f0, #ffffff);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 850px;
+    margin: 20px auto;
+    animation: fadeIn 1.3s ease;
+    text-align: center;
+}
+
+.welcome-box h2 {
+    color: #c2185b;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.welcome-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.highlight {
+    color: #d63384;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+</head>
+
+<body>
+
+<table border="0" width="80%" align="center">
+
+<tr>
+<td align="right">
+<a href="mailto:tiaraniasyifa60@gmail.com" target="_blank">| e-mail</a>
+<a href="https://wa.me/6283181002126" target="_blank">| whatsapp</a>
+<a href="https://www.facebook.com/tiaraniasyifa" target="_blank">| Facebook</a>
+<a href="https://www.instagram.com/tiarawr._" target="_blank">| Instagram</a>
+<a href="https://www.youtube.com/@tiaraniasyifa3310" target="_blank">| YouTube</a>
+<a href="https://www.tiktok.com/@tiarv.yf" target="_blank">| TikTok</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="image/header.png" width="100%">
+
+<table border="0" width="100%">
+<tr bgcolor="#999999">
+<th><a href="index.html">HOME</a></th>
+<th><a href="profile.html">PROFIL</a></th>
+<th><a href="gallery.html">GALLERY</a></th>
+<th><a href="tutorial.html">TUTORIAL</a></th>
+<th><a href="article.html">ARTICLE</a></th>
+<th><a href="aboutme.html">ABOUT ME</a></th>
+<th><a href="guestbook.html">GUESTBOOK</a></th>
+<th align="right">
+<form action="#">
+<input type="text" name="pencarian">
+<input type="submit" value="~ cari ~">
+</form>
+</th>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>
+<table border="0" width="100%" height="350">
+
+<tr>
+
+<td width="20%" valign="top">
+
+<fieldset>
+<legend>MENU UTAMA</legend>
+<ul>
+<li><a href="index.html">Halaman Depan</a></li>
+<li><a href="profile.html">Profil Pribadi</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="article.html">Artikel</a></li>
+<li><a href="tutorial.html">Materi Belajar</a></li>
+<li><a href="aboutme.html">Tentang Saya</a></li>
+<li><a href="guestbook.html">Isi Buku Tamu</a></li>
+</ul>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>FOTO KESAYANGAN</legend>
+<marquee>
+<img src="image/IMG_20250917_104848.jpg" width="200">
+<img src="image/IMG_20250917_104703.jpg" width="200">
+<img src="image/IMG_20250917_104315.jpg" width="200">
+<img src="image/IMG_20250917_104818.jpg" width="200">
+<img src="image/IMG_20250917_104519.jpg" width="200">
+</marquee>
+</fieldset>
+
+</td>
+
+<td width="80%" valign="top">
+
+<!-- Konten Awal -->
+
+<h2 class="gallery-title">
+  📸 My Gallery 📸
+</h2>
+
+<div class="gallery">
+  <img src="image/IMG_20250917_104848.jpg" alt="Foto 1">
+  <img src="image/IMG_20250917_104315.jpg" alt="Foto 2">
+  <img src="image/IMG_20250917_104818.jpg" alt="Foto 3">
+  <img src="image/IMG_20250917_104736.jpg" alt="Foto 4">
+  <img src="image/IMG_20250917_104703.jpg" alt="Foto 5">
+</div>
+
+<!-- Konten Akhir -->
+
+<style>
+.gallery-title {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 20px;
+  font-family: Verdana, sans-serif;
+  animation: fadeInSimple 1s ease;
+}
+
+/* Gallery Layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Image Style */
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Delay animasi */
+.gallery img:nth-child(1) { animation-delay: 0.2s; }
+.gallery img:nth-child(2) { animation-delay: 0.4s; }
+.gallery img:nth-child(3) { animation-delay: 0.6s; }
+.gallery img:nth-child(4) { animation-delay: 0.8s; }
+.gallery img:nth-child(5) { animation-delay: 1s; }
+
+/* Hover Effect */
+.gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSimple {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+</style>
+
+</td>
+
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align="center" bgcolor="#999999">
+<br>
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6072.043707163134!2d101.35773009116514!3d0.46515828151743194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1758101666824!5m2!1sid!2sid"
+width="100%"
+height="300"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+<br><br>
+<small>
+ Tiarani Asyifa - Sistem Informasi - UIN Suska Riau<br />
+            Copyright &copy; 2026
+</small>
+
+<br><br>
+</td>
+</tr>
+
+</table>
+
+</body>
+</html>

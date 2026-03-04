@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Biodata Diri</title>
+</head>
+<body>
+
+    <form action="#" method="post" style="border: 3px solid black; padding: 30px; width: 600px; margin: auto;">
+
+        <h3 align="center">FORMULIR BIODATA DIRI</h3>
+        <hr>
+        <p>Isilah biodata anda dengan lengkap pada form di bawah ini.!</p>
+        <hr>
+
+        Nama Lengkap : <input type="text" name="nama"><br><br>
+        Tempat Tg/Jam Lahir : 
+        <input type="date" name="tgl"><br>
+        <input type="time" name="jam"><br><br>
+
+        Jenis Kelamin : 
+        <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+        <input type="radio" name="jk" value="Perempuan"> Perempuan
+        <br><br>
+
+        Agama : 
+        <select name="agama">
+            <option>Islam</option>
+            <option>Kristen</option>
+            <option>Katolik</option>
+            <option>Hindu</option>
+            <option>Buddha</option>
+            <option>Konghucu</option>
+        </select><br><br>
+
+        Alamat Rumah : <br>
+        <textarea name="alamat" rows="3" cols="40"></textarea><br><br>
+
+        No. Telepon : <input type="tel" name="telp" placeholder=""><br><br>
+        E-Mail : <input type="email" name="email"><br><br>
+        URL : <input type="url" name="url"><br><br>
+
+        Warna Kesukaan : <input type="color" name="warna"><br><br>
+
+        Hobby : <br>
+        <input type="checkbox" name="hobby" value="Membaca"> Membaca
+        <input type="checkbox" name="hobby" value="Menulis"> Menulis
+        <input type="checkbox" name="hobby" value="Memasak"> Memasak
+        <input type="checkbox" name="hobby" value="Fotografi"> Fotografi
+        <input type="checkbox" name="hobby" value="Lainnya"> Lainnya
+        <br><br>
+
+        Upload Foto (3x4) : <input type="file" name="foto"><br><br>
+
+        <hr>
+        <p>Isilah Username dan Password baru anda di bawah ini..!</p>
+        <hr>
+
+        Username Baru : <input type="text" name="username"><br><br>
+        Password Baru : <input type="password" name="password"><br><br>
+        Konfirmasi Password : <input type="password" name="konfirmasi"><br><br>
+
+        <hr>
+        <div style="text-align: right;">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Batal">
+        </div>
+    </form>
+</body>
+</html>
